@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb1dfdc-9bc0-4296-b7a7-67048a97772e" name="Changes" comment="initial frame">
-      <change afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
+    <list default="true" id="3cb1dfdc-9bc0-4296-b7a7-67048a97772e" name="Changes" comment="start node, goal node, solid nodes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/VisualizerPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VisualizerPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,11 +55,19 @@
       <option name="project" value="LOCAL" />
       <updated>1674754597935</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="start node, goal node, solid nodes">
+      <created>1674759030209</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674759030209</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial frame" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial frame" />
+    <MESSAGE value="start node, goal node, solid nodes" />
+    <option name="LAST_COMMIT_MESSAGE" value="start node, goal node, solid nodes" />
   </component>
 </project>
