@@ -34,15 +34,15 @@ public class Node extends JButton implements ActionListener {
     }
 
     public void setAsGoal(){
-        setBackground(Color.yellow);
+        setBackground(new Color(140, 255, 140));
         setForeground(Color.black);
         setText("Goal");
         goal = true;
     }
 
     public void setAsSolid(){
-        setBackground(Color.black);
-        setForeground(Color.black);
+        setBackground(new Color(0, 71, 100));
+        setForeground(new Color(0, 71, 100));
         solid = true;
     }
 
@@ -52,19 +52,19 @@ public class Node extends JButton implements ActionListener {
 
     public void setAsChecked(){
         if(!start && !goal){
-            setBackground(Color.orange);
+            setBackground(new Color(25, 189, 255));
             setForeground(Color.black);
         }
         checked = true;
     }
 
-    public void setAsPassed(){
+    public void setAsPath(){
         setBackground(Color.green);
         setForeground(Color.black);
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        setBackground(Color.orange);
+        setBackground(Color.red);
     }
 }
