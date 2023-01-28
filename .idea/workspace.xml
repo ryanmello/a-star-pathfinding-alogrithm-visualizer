@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb1dfdc-9bc0-4296-b7a7-67048a97772e" name="Changes" comment="search and key handler">
+    <list default="true" id="3cb1dfdc-9bc0-4296-b7a7-67048a97772e" name="Changes" comment="auto search">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KeyHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeyHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RoundedBorder.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/VisualizerPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VisualizerPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674792215550</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="auto search">
+      <created>1674873130847</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674873130847</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -85,6 +90,7 @@
     <MESSAGE value="start node, goal node, solid nodes" />
     <MESSAGE value="gCost, hCost, fCost" />
     <MESSAGE value="search and key handler" />
-    <option name="LAST_COMMIT_MESSAGE" value="search and key handler" />
+    <MESSAGE value="auto search" />
+    <option name="LAST_COMMIT_MESSAGE" value="auto search" />
   </component>
 </project>

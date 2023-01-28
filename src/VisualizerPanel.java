@@ -225,7 +225,7 @@ public class VisualizerPanel extends JPanel {
             }
             step++;
         }
-        // step++;
+        trackThePath();
     }
 
     private void openNode(Node node){
@@ -234,6 +234,17 @@ public class VisualizerPanel extends JPanel {
             node.setAsOpen();
             node.parent = currentNode;
             openList.add(node);
+        }
+    }
+
+    private void trackThePath(){
+        Node current = goalNode;
+
+        while(current != startNode){
+            current = current.parent;
+            if(current != startNode){
+                current.setAsPath();
+            }
         }
     }
 }
