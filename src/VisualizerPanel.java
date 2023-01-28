@@ -173,9 +173,25 @@ public class VisualizerPanel extends JPanel {
     }
 
     public void autoSearch(){
-        // search as long as the goal node has not been reached
+        new java.util.Timer().schedule(
+                new java.util.TimerTask() {
+                    @Override
+                    public void run() {
+                        try {
+                            executeAutoSearch();
+                        } catch (InterruptedException e) {
+                            throw new RuntimeException(e);
+                        }
+                    }
+                },
+                100
+        );
+    }
+
+    public void executeAutoSearch() throws InterruptedException {
         while(!goalReached && step < 300){
             // implement timer to pause the game temporarily in between
+            Thread.sleep(50);
             int col = currentNode.col;
             int row = currentNode.row;
 
