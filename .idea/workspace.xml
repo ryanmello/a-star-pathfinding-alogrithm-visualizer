@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3cb1dfdc-9bc0-4296-b7a7-67048a97772e" name="Changes" comment="track path">
+    <list default="true" id="3cb1dfdc-9bc0-4296-b7a7-67048a97772e" name="Changes" comment="timer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/VisualizerPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VisualizerPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +90,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674873999774</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="timer">
+      <created>1674875036440</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674875036440</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -99,6 +107,7 @@
     <MESSAGE value="search and key handler" />
     <MESSAGE value="auto search" />
     <MESSAGE value="track path" />
-    <option name="LAST_COMMIT_MESSAGE" value="track path" />
+    <MESSAGE value="timer" />
+    <option name="LAST_COMMIT_MESSAGE" value="timer" />
   </component>
 </project>

@@ -34,15 +34,15 @@ public class Node extends JButton implements ActionListener {
     }
 
     public void setAsGoal(){
-        setBackground(new Color(140, 255, 140));
+        setBackground(Color.pink);
         setForeground(Color.black);
         setText("Goal");
         goal = true;
     }
 
     public void setAsSolid(){
-        setBackground(new Color(0, 71, 100));
-        setForeground(new Color(0, 71, 100));
+        setBackground(Color.black);
+        setForeground(Color.black);
         solid = true;
     }
 

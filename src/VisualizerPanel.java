@@ -97,7 +97,6 @@ public class VisualizerPanel extends JPanel {
     }
 
     private void getCost(Node node){
-
         // calculate g cost
         int xDistance = Math.abs(node.col - startNode.col);
         int yDistance = Math.abs(node.row - startNode.row);
@@ -190,7 +189,7 @@ public class VisualizerPanel extends JPanel {
 
     public void executeAutoSearch() throws InterruptedException {
         while(!goalReached && step < 300){
-            // implement timer to pause the game temporarily in between
+            // timer to pause the game temporarily in between node traversal
             Thread.sleep(50);
             int col = currentNode.col;
             int row = currentNode.row;
