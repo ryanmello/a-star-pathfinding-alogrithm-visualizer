@@ -19,6 +19,7 @@ public class VisualizerPanel extends JPanel {
     ArrayList<Node> checkedList = new ArrayList<>();
 
     boolean goalReached = false;
+    int step = 0;
 
     VisualizerPanel(){
         this.setPreferredSize(new Dimension(SCREEN_WIDTH, SCREEN_HEIGHT));
@@ -169,6 +170,62 @@ public class VisualizerPanel extends JPanel {
                 goalReached = true;
             }
         }
+    }
+
+    public void autoSearch(){
+        // search as long as the goal node has not been reached
+        while(!goalReached && step < 300){
+            // implement timer to pause the game temporarily in between
+            int col = currentNode.col;
+            int row = currentNode.row;
+
+            currentNode.setAsChecked();
+            checkedList.add(currentNode);
+            openList.remove(currentNode);
+
+            // open the top node
+            if(row - 1 >= 0){
+                openNode(node[col][row - 1]);
+            }
+            // open the left node
+            if(col - 1 >= 0){
+                openNode(node[col - 1][row]);
+            }
+            // open the bottom node
+            if(row + 1< maxRow){
+                openNode(node[col][row + 1]);
+            }
+            // open the right node
+            if(col + 1 < maxCol){
+                openNode(node[col + 1][row]);
+            }
+
+            int bestNodeIndex = 0;
+            int bestNodefCost = 999;
+
+            // loop through each open node
+            for(int i = 0; i < openList.size(); i++){
+                // find lowest fCost among open nodes
+                if(openList.get(i).fCost < bestNodefCost){
+                    bestNodeIndex = i;
+                    bestNodefCost = openList.get(i).fCost;
+                } else if(openList.get(i).fCost == bestNodefCost){
+                    // find lowest gCost if fCost is the same
+                    if(openList.get(i).gCost < openList.get(bestNodeIndex).gCost){
+                        bestNodeIndex = i;
+                    }
+                }
+            }
+            // move the pointer to the best available node
+            currentNode = openList.get(bestNodeIndex);
+
+            // stop searching once goal node is found
+            if(currentNode == goalNode){
+                goalReached = true;
+            }
+            step++;
+        }
+        // step++;
     }
 
     private void openNode(Node node){
